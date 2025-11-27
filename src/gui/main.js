@@ -4,7 +4,9 @@ const BrowserWindow = electron.BrowserWindow;
 const ipcMain = electron.ipcMain;
 const dialog = electron.dialog;
 const path = require("path");
-const { UniversalScriptGenerator } = require("../core/script-generator");
+const {
+  UniversalScriptGenerator,
+} = require("../../dist/core/script-generator");
 
 let mainWindow;
 let generator;

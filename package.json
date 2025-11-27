@@ -2,14 +2,14 @@
   "name": "scrypgen",
   "version": "1.0.0",
   "description": "Alsania ScrypGen - Transform natural language into powerful scripts with AI assistance",
-  "main": "dist/index.js",
+  "main": "src/gui/main.js",
   "bin": {
     "scrypgen": "dist/cli/index.js",
     "sg": "dist/cli/index.js"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "concurrently \"tsc -w\" \"electron .\"",
+    "build": "tsc && cp -r src/gui dist/",
+    "dev": "npm run build && concurrently \"tsc -w\" \"electron .\"",
     "start": "node dist/cli/index.js",
     "gui": "electron dist/gui/main.js",
     "test": "jest",
@@ -39,11 +39,11 @@
     "electron",
     "desktop-app"
   ],
-  "author": "Sigma <sigma@alsania.dev>",
+  "author": "Alsania I/O",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alsania-io/scrypgen.git"
+    "url": "https://github.com/alsania-dev/scrypgen.git"
   },
   "engines": {
     "node": ">=18.0.0",
