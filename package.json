@@ -65,6 +65,9 @@
     "yaml": "^2.3.0"
   },
   "devDependencies": {
+    "@eslint/config-array": "^0.21.1",
+    "@eslint/js": "^9.39.2",
+    "@eslint/object-schema": "^2.1.7",
     "@types/fs-extra": "^11.0.1",
     "@types/handlebars": "^4.0.40",
     "@types/inquirer": "^9.0.9",
@@ -82,10 +85,9 @@
     "ts-jest": "^29.4.6",
     "ts-node": "^10.9.0",
     "typescript": "^5.1.0",
+    "typescript-eslint": "^8.53.1",
     "webpack": "^5.104.1",
-    "webpack-cli": "^6.0.1",
-    "@eslint/config-array": "^0.21.1",
-    "@eslint/object-schema": "^2.1.7"
+    "webpack-cli": "^6.0.1"
   },
   "@alsania-io": {
     "aligned": true,
