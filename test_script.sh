@@ -10,5 +10,5 @@ set -e
 
 echo "Hello, World!"
     # Main functionality
-    echo &quot;Hello, World!&quot;
+    echo "Hello, World!"
     # TODO: Implement custom logic based on your requirements
